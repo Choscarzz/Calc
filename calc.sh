@@ -7,7 +7,6 @@
 #  ---------------------------------------------------------
 
 # Colores
-yellow='\e[33m'
 green='\e[32m'
 red='\e[31m'
 blue='\e[34m'
@@ -23,7 +22,7 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "[${red}!${reset}] Se produjo un error al operar. Los datos son incorrectos."
+        echo  -e "${red}✘${reset} Los datos son incorrectos."
         exit 1
 else
         res=$(($num1 + $num2))
@@ -52,7 +51,7 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "[${red}!${reset}] Se produjo un error al operar. Los datos son incorrectos."
+        echo  -e "${red}✘${reset} Los datos son incorrectos."
         exit 1
 else
         res=$((num1 - num2))
@@ -81,7 +80,7 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "[${red}!${reset}] Se produjo un error al operar. Los datos son incorrectos."
+        echo  -e "${red}✘${reset} Los datos son incorrectos."
         exit 1
 else
         res=$((num1 * num2))
@@ -109,12 +108,11 @@ echo -n "Número 2: "
 read num2
 
 # Mostrar resultado
-
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "[${red}!${reset}] Se produjo un error al operar. Los datos son incorrectos."
+        echo  -e "${red}✘${reset} Los datos son incorrectos."
         exit 1
 elif [ "$num2" -eq 0 ]; then
-        echo -e "[${red}!${reset}] Error matemático. No se puede dividir entre 0."
+        echo -e "${red}✘${reset} Error matemático. No se puede dividir entre 0."
         exit 1
 else
         res=$((num1 / num2))
@@ -134,7 +132,7 @@ else
 fi
 }
 
-# Menú de Opciones
+# Menú de opciones
 menu(){
 echo "┌────────────────────┐"
 echo "│ Calculadora [+/-]  │"
@@ -162,7 +160,7 @@ case $opt in
                 dividir # Envía a la función dividir
         ;;
         *)
-                echo -e "[${red}!${reset}] La opción no existe. Verifique la opción."
+                echo -e "${red}✘${reset} La opción no existe. Verifique la opción."
                 exit 1
         ;;
 esac
