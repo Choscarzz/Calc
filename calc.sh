@@ -1,12 +1,12 @@
 #!/bin/bash
-#  ---------------------------------------------------------
-# |                                                         |
-# |  Calc - Calculadora de Operaciones Básicas Interactiva  |
-# |  • By @Choscar                                          |
-# |                                                         |
-#  ---------------------------------------------------------
+#  --------------------------------------
+# |                                      |
+# |  Calc - Una calculadora Interactiva  |
+# |  • By @Choscar                       |
+# |                                      |
+#  --------------------------------------
 
-# Colores
+# Lista de colores
 green='\e[32m'
 red='\e[31m'
 blue='\e[34m'
@@ -22,11 +22,11 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "${red}✘${reset} Los datos son incorrectos."
-        exit 1
+    echo  -e "${red}✘${reset} Los datos son incorrectos."
+    exit 1
 else
-        res=$(($num1 + $num2))
-        echo -e "${green}➜ ${whiteN}$res${reset}"
+    res=$(($num1 + $num2))
+    echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
 # Volver a operar
@@ -34,11 +34,11 @@ echo -n "Desea sumar otra cantidad? (s/n): "
 read opt2
 
 if [ "$opt2" == "s" ]; then
-        sumar
+    sumar
 elif [ "$opt2" == "n" ]; then
-        echo "Thanks!"
+    echo "Thanks!"
 else
-        echo "Bye..."
+    echo "Bye..."
 fi
 }
 
@@ -51,11 +51,11 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "${red}✘${reset} Los datos son incorrectos."
-        exit 1
+    echo  -e "${red}✘${reset} Los datos son incorrectos."
+    exit 1
 else
-        res=$((num1 - num2))
-        echo -e "${green}➜ ${whiteN}$res${reset}"
+    res=$((num1 - num2))
+    echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
 # Volver a operar
@@ -63,11 +63,11 @@ echo -n "Desea restar otra cantidad? (s/n): "
 read opt2
 
 if [ "$opt2" == "s" ]; then
-        restar
+    restar
 elif [ "$opt2" == "n" ]; then
-        echo "Thanks!"
+    echo "Thanks!"
 else
-        echo "Bye..."
+    echo "Bye..."
 fi
 }
 
@@ -80,11 +80,11 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "${red}✘${reset} Los datos son incorrectos."
-        exit 1
+    echo  -e "${red}✘${reset} Los datos son incorrectos."
+    exit 1
 else
-        res=$((num1 * num2))
-        echo -e "${green}➜ ${whiteN}$res${reset}"
+    res=$((num1 * num2))
+    echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
 # Volver a operar
@@ -92,11 +92,11 @@ echo -n "Desea multiplicar otra cantidad? (s/n): "
 read opt2
 
 if [ "$opt2" == "s" ]; then
-        multiplicar
+    multiplicar
 elif [ "$opt2" == "n" ]; then
-        echo "Thanks!"
+    echo "Thanks!"
 else
-        echo "Bye..."
+    echo "Bye..."
 fi
 }
 
@@ -109,14 +109,14 @@ read num2
 
 # Mostrar resultado
 if [ -z "$num1" ] || [ -z "$num2" ]; then
-        echo  -e "${red}✘${reset} Los datos son incorrectos."
-        exit 1
+    echo  -e "${red}✘${reset} Los datos son incorrectos."
+    exit 1
 elif [ "$num2" -eq 0 ]; then
-        echo -e "${red}✘${reset} Error matemático. No se puede dividir entre 0."
-        exit 1
+    echo -e "${red}✘${reset} Error matemático. No se puede dividir entre 0."
+    exit 1
 else
-        res=$((num1 / num2))
-        echo -e "${green}➜ ${whiteN}$res${reset}"
+    res=$((num1 / num2))
+    echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
 # Volver a operar
@@ -124,11 +124,11 @@ echo -n "Desea dividir otra cantidad? (s/n): "
 read opt2
 
 if [ "$opt2" == "s" ]; then
-        dividir
+    dividir
 elif [ "$opt2"  == "n" ]; then
-        echo "Thanks!"
+    echo "Thanks!"
 else
-                echo "Bye..."
+    echo "Bye..."
 fi
 }
 
@@ -147,22 +147,22 @@ echo -ne "• ${blue}Opción: ${reset}"
 read opt
 
 case $opt in
-        1)
-                sumar # Envía a la función suma
-        ;;
-        2)
-                restar # Envía a la función resta
-        ;;
-        3)
-                multiplicar # Envía a la función multiplicar
-        ;;
-        4)
-                dividir # Envía a la función dividir
-        ;;
-        *)
-                echo -e "${red}✘${reset} La opción no existe. Verifique la opción."
-                exit 1
-        ;;
+  1) # Envía a la función suma
+   sumar
+   ;;
+  2) # Envía a la función resta
+   restar
+   ;;
+  3) # Envía a la función multiplicar
+   multiplicar
+   ;;
+  4) # Envía a la función dividir
+   dividir
+   ;;
+  *) # Error
+   echo -e "${red}✘${reset} La opción no existe. Verifique la opción."
+   exit 1
+   ;;
 esac
 }
 
