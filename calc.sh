@@ -166,5 +166,5 @@ case $opt in
 esac
 }
 
-# Ejecutar
+# Iniciar
 menu
