@@ -19,7 +19,7 @@ git clone https://github.com/Choscarzz/Calc.git
 ```bash 
 mv calc.sh /bin/calc
 ```
-> [!NOTA]
+> [!NOTE]
 > Asegúrese de que la ruta sea correcta. 
 
 3. Inicie el script
