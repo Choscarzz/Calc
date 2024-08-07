@@ -25,7 +25,7 @@ if [ -z "$num1" ] || [ -z "$num2" ]; then
     echo  -e "${red}✘${reset} Los datos son incorrectos."
     exit 1
 else
-    res=$(($num1 + $num2))
+    res=$(bc<<<"scale=2; $num1 + $num2")
     echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
@@ -54,7 +54,7 @@ if [ -z "$num1" ] || [ -z "$num2" ]; then
     echo  -e "${red}✘${reset} Los datos son incorrectos."
     exit 1
 else
-    res=$((num1 - num2))
+    res=$(bc<<<"scale=2; $num1 - $num2")
     echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
@@ -83,7 +83,7 @@ if [ -z "$num1" ] || [ -z "$num2" ]; then
     echo  -e "${red}✘${reset} Los datos son incorrectos."
     exit 1
 else
-    res=$((num1 * num2))
+    res=$(bc<<<"scale=2; $num1 * $num2")
     echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
@@ -115,7 +115,7 @@ elif [ "$num2" -eq 0 ]; then
     echo -e "${red}✘${reset} Error matemático. No se puede dividir entre 0."
     exit 1
 else
-    res=$((num1 / num2))
+    res=$(bc<<<"scale=2; $num1 / $num2")
     echo -e "${green}➜ ${whiteN}$res${reset}"
 fi
 
