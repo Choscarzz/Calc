@@ -4,7 +4,7 @@ Ofrece funciones como suma, resta, multiplicación y división.
 
 ![image](screenshots/example.jpg)
 
-algunos ejemplos:
+## Screenshots
 
 ![image](screenshots/example2.jpg)
 
