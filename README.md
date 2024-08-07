@@ -4,15 +4,6 @@ Ofrece funciones como suma, resta, multiplicación y división.
 
 ![image](screenshots/example.jpg)
 
-<<<<<<< HEAD
-## Screenshots
-
-![image](screenshots/example2.jpg)
-
-![image](screenshots/example3.jpg)
-
-=======
->>>>>>> origin/main
 ## Instalar
 1. Clone el repositorio:
 ```bash 
