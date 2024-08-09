@@ -27,7 +27,7 @@ git clone https://github.com/Choscarzz/Calc.git
 chmod +x calc.sh
 ```
 
-3. Mueva el archivo `calc.sh` a su carpeta de ejecutables
+3. Mueva el archivo `calc.sh` a su carpeta de ejecutables. Se recomienda el cambio de nombre a **calc**, así:
 ```bash 
 mv calc.sh /bin/calc
 ```
