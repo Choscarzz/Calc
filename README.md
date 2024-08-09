@@ -18,7 +18,6 @@ Ofrece funciones como suma, resta, multiplicación y división.
 >```
 >De lo contrario, debe instalarlo con su administrador de paquetes.
 
-
 1. Clone el repositorio:
 ```bash 
 git clone https://github.com/Choscarzz/Calc.git
@@ -33,7 +32,7 @@ chmod +x calc.sh
 mv calc.sh /bin/calc
 ```
 > [!NOTE]
-> Revise que la ruta sea correcta.
+> Verifique que la ruta sea correcta.
 
 4. Inicie el script
 ```bash
