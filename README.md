@@ -5,13 +5,20 @@ Ofrece funciones como suma, resta, multiplicación y división.
 ![image](screenshots/example.jpg)
 
 ## Ejemplos 
-***Sumando dos números, uno con decimal***
+*Sumando dos números, uno con decimal.*
 ![image](screenshots/example2.jpg)
 
-***Restando dos veces...***
+*Restando dos veces...*
 ![image](screenshots/example3.jpg)
 
 ## Instalar
+> Asegúrese de tener instalado previamente el paquete `bc`, disponible en la mayoría de distribuciones Linux. Lo puede comprobar ejecutando:
+>```bash
+>which bc
+>```
+>De lo contrario, debe instalarlo con su administrador de paquetes.
+
+
 1. Clone el repositorio:
 ```bash 
 git clone https://github.com/Choscarzz/Calc.git
@@ -26,7 +33,7 @@ chmod +x calc.sh
 mv calc.sh /bin/calc
 ```
 > [!NOTE]
-> Asegúrese de que la ruta sea correcta.
+> Revise que la ruta sea correcta.
 
 4. Inicie el script
 ```bash
