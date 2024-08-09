@@ -5,10 +5,10 @@ Ofrece funciones como suma, resta, multiplicación y división.
 ![image](screenshots/example.jpg)
 
 ## Ejemplos 
-_Sumando dos números, uno con decimal_
+***Sumando dos números, uno con decimal***
 ![image](screenshots/example2.jpg)
 
-_Volviendo a operar..._
+***Restando dos veces...***
 ![image](screenshots/example3.jpg)
 
 ## Instalar
@@ -18,7 +18,7 @@ git clone https://github.com/Choscarzz/Calc.git
 ```
 2. Otorgue permisos de ejecución
 ```bash
-chmod +x cal.sh
+chmod +x calc.sh
 ```
 
 3. Mueva el archivo `calc.sh` a su carpeta de ejecutables
