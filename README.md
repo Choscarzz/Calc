@@ -4,12 +4,9 @@ Ofrece funciones como suma, resta, multiplicación y división.
 
 ![image](screenshots/example.jpg)
 
-## Ejemplos 
+## Ejemplo 
 *Sumando dos números, uno con decimal.*
 ![image](screenshots/example2.jpg)
-
-*Restando dos veces...*
-![image](screenshots/example3.jpg)
 
 ## Instalar
 > Asegúrese de tener instalado previamente el paquete `bc`, disponible en la mayoría de distribuciones Linux. Lo puede comprobar ejecutando:
